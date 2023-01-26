@@ -9,6 +9,8 @@
             Console.WriteLine("Hello, World!");
             Console.WriteLine("Bro\nCode");
             Console.WriteLine("back\ba");
+            Console.Write("a\t\vb");
+            Console.ReadKey();
         }
     }
 }
