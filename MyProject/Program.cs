@@ -36,6 +36,9 @@
             string userName = symbol + name;
             Console.WriteLine("Your username is: " + userName);
 
+            const double pi = 3.141592;
+            Console.WriteLine(pi);
+
             Console.ReadKey();
         }
     }
