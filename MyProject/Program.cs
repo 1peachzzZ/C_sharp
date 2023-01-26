@@ -5,9 +5,10 @@
         static void Main(string[] args)
         {
             Console.Write("Hey");
+            Console.Write("back\b");
             Console.WriteLine("Hello, World!");
             Console.WriteLine("Bro\nCode");
-            Console.WriteLine("back\b");
+            Console.WriteLine("back\ba");
         }
     }
 }
