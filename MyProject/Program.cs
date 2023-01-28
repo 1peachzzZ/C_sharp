@@ -39,6 +39,11 @@
             const double pi = 3.141592;
             Console.WriteLine(pi);
 
+            double a = 3.14;
+            int b =Convert.ToInt32(a);
+            Console.WriteLine(a.GetType());
+            Console.WriteLine(b.GetType());
+
             Console.ReadKey();
         }
     }
