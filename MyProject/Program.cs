@@ -44,6 +44,10 @@
             Console.WriteLine(a.GetType());
             Console.WriteLine(b.GetType());
 
+            Console.WriteLine("Whats your name?");
+            String Name = Console.ReadLine();
+            Console.WriteLine("Hello!" + Name);
+
             Console.ReadKey();
         }
     }
