@@ -45,8 +45,13 @@
             Console.WriteLine(b.GetType());
 
             Console.WriteLine("Whats your name?");
-            String Name = Console.ReadLine();
+            string Name = Console.ReadLine();
             Console.WriteLine("Hello!" + Name);
+
+            int friends = 10;
+            Console.WriteLine(friends);
+            int remainder = friends % 3;
+            Console.WriteLine(remainder);
 
             Console.ReadKey();
         }
