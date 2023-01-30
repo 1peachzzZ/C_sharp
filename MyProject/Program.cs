@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            //1.output
             Console.Write("Hey");
             Console.Write("back\b");
             Console.WriteLine("Hello, World!");
@@ -11,6 +12,7 @@
             Console.WriteLine("back\ba");
             Console.Write("a\t\vb");
 
+            //2.variables
             int x; //declaration
             x = 123; //initialization
 
@@ -36,22 +38,29 @@
             string userName = symbol + name;
             Console.WriteLine("Your username is: " + userName);
 
+            //3.constants
             const double pi = 3.141592;
             Console.WriteLine(pi);
 
+            //4.type casting
             double a = 3.14;
             int b =Convert.ToInt32(a);
             Console.WriteLine(a.GetType());
             Console.WriteLine(b.GetType());
 
+            //5.user input
             Console.WriteLine("Whats your name?");
             string Name = Console.ReadLine();
             Console.WriteLine("Hello!" + Name);
 
+            //6.arithmetic operators
             int friends = 10;
             Console.WriteLine(friends);
             int remainder = friends % 3;
             Console.WriteLine(remainder);
+
+            //7.Math class
+
 
             Console.ReadKey();
         }
