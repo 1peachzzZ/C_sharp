@@ -66,6 +66,13 @@
             Console.WriteLine(w);
             Console.WriteLine(e);
 
+            //8.random numbers
+            Random random = new();
+            int r = random.Next(0, 10);
+            double t = random.NextDouble();
+            Console.WriteLine(r);
+            Console.WriteLine(t);
+
             Console.ReadKey();
         }
     }
