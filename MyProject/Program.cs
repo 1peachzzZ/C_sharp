@@ -73,6 +73,11 @@
             Console.WriteLine(r);
             Console.WriteLine(t);
 
+            //9.hypotenuse calculator
+            double edge1 = 3.0;
+            double edge2 = 4.0;
+            Console.WriteLine(Math.Sqrt((edge1 * edge1) + (edge2 * edge2)));
+
             Console.ReadKey();
         }
     }
