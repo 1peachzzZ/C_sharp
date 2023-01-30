@@ -23,7 +23,7 @@
             int age = 21;//whole integer
             double height = 300.5;//decimal number
             bool alive = true;
-            char symbol= '@';
+            char symbol = '@';
             string name = "1peach";
 
             Console.WriteLine("Hello " + name);
@@ -44,7 +44,7 @@
 
             //4.type casting
             double a = 3.14;
-            int b =Convert.ToInt32(a);
+            int b = Convert.ToInt32(a);
             Console.WriteLine(a.GetType());
             Console.WriteLine(b.GetType());
 
@@ -60,7 +60,11 @@
             Console.WriteLine(remainder);
 
             //7.Math class
-
+            double q = 2;
+            double w = Math.Pow(q, 3);
+            double e = Math.Sqrt(w);
+            Console.WriteLine(w);
+            Console.WriteLine(e);
 
             Console.ReadKey();
         }
