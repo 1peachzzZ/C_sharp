@@ -78,6 +78,22 @@
             double edge2 = 4.0;
             Console.WriteLine(Math.Sqrt((edge1 * edge1) + (edge2 * edge2)));
 
+            //10.string method
+            string fullName = "Bro Code";
+            fullName = fullName.ToUpper();
+            fullName = fullName.ToLower();
+            string phoneNumber = "123-456-7890";
+            phoneNumber = phoneNumber.Replace("-", "/");
+            string username = fullName.Insert(0, "@");
+            Console.WriteLine(fullName);
+            Console.WriteLine(phoneNumber);
+            Console.WriteLine(username);
+            Console.WriteLine(phoneNumber.Length);
+            string firstname=fullName.Substring(0,3);
+            string lastname=fullName.Substring(4,3);
+            Console.WriteLine(firstname);
+            Console.WriteLine(lastname);
+
             Console.ReadKey();
         }
     }
