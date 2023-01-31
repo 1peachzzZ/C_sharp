@@ -101,6 +101,21 @@
                 Console.WriteLine("ok");
             }
 
+            //12.switches
+
+            switch (ages)
+            {
+                case 1:
+                    Console.WriteLine("1");
+                    break;
+                case 2:
+                    Console.WriteLine();
+                    break;
+                default: 
+                    Console.WriteLine("if wrong");
+                    break;
+            }
+
             Console.ReadKey();
         }
     }
