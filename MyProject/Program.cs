@@ -135,6 +135,19 @@
             {
                 Console.WriteLine(i);
             }
+
+            //16.nested loops
+
+            for (int i = 0; i < 10; i++)
+            {
+                while (true)
+                {
+
+                }
+            }
+
+            //17.number guessing game
+
             Console.ReadKey();
         }
     }
