@@ -89,10 +89,17 @@
             Console.WriteLine(phoneNumber);
             Console.WriteLine(username);
             Console.WriteLine(phoneNumber.Length);
-            string firstname=fullName.Substring(0,3);
-            string lastname=fullName.Substring(4,3);
+            string firstname = fullName.Substring(0, 3);
+            string lastname = fullName.Substring(4, 3);
             Console.WriteLine(firstname);
             Console.WriteLine(lastname);
+
+            //11.if statements
+            int ages = 31;
+            if (ages == 31)
+            {
+                Console.WriteLine("ok");
+            }
 
             Console.ReadKey();
         }
