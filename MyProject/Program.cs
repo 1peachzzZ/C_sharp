@@ -111,10 +111,26 @@
                 case 2:
                     Console.WriteLine();
                     break;
-                default: 
+                default:
                     Console.WriteLine("if wrong");
                     break;
             }
+            //13.logical operators
+            double temp = 36.5;
+            if (temp > 0 && temp < 100 || temp == 36.5)
+            {
+                Console.WriteLine("ok");
+            }
+
+            //14.while loops
+            string name1 = "";
+            while (name1 == "")
+            {
+                Console.WriteLine("Enter your name:");
+                name1 = Console.ReadLine();
+            }
+
+            //15.for loops
 
             Console.ReadKey();
         }
