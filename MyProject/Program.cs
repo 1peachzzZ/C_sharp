@@ -260,6 +260,8 @@
             Human.Sleep();
             Console.WriteLine(Human.numberofhuman);
             
+            //33.overloaded constructors
+            //34.inheritance
 
             Console.ReadKey();
 
@@ -307,5 +309,26 @@
         public void Eat() { Console.WriteLine(name); }
         public static void Sleep() { }
 
+    }
+    class Vehicle
+    {
+        public int speed;
+
+        public void go()
+        {
+            Console.WriteLine("moving!");
+        }
+    }
+    class Car : Vehicle
+    {
+        public int wheels = 4;
+    }
+    class Bicycle : Vehicle
+    {
+        public int wheels=2;
+    }
+    class Boat : Vehicle
+    {
+        public int wheels=0;
     }
 }
