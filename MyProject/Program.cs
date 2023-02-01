@@ -193,6 +193,19 @@
                 }
             }
 
+            //18.rock-paper-scissors game
+            //19.arrays
+            string[] car = new string[3];
+            Console.WriteLine(car);
+            string[] cars = { "BMW", "Mustang", "Corvette" };
+
+            Console.WriteLine(cars[1]);
+            for (int i = 0; i < cars.Length; i++)
+            {
+                Console.WriteLine(cars[i]);
+            }
+            //foreach loops
+
             Console.ReadKey();
         }
     }
