@@ -233,7 +233,13 @@
             //24.params keyword
             double total = Checkout(1.2, 2, 3, 4, 5);
 
-            //25.exception handing
+            //25.exception handing line:185
+            //26.conditional operator
+            double temperature = 20;
+            Console.WriteLine((temperature >= 15) ? "warm" : "cold");
+
+            //27.string interpolation
+            Console.WriteLine($"Hello {firstname} {lastname}.");
 
 
             Console.ReadKey();
