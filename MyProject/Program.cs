@@ -51,7 +51,7 @@
 
             //5.user input
             Console.WriteLine("Whats your name?");
-            string Name = Console.ReadLine();
+            string Name = Console.ReadLine()!;
             Console.WriteLine("Hello!" + Name);
 
             //6.arithmetic operators
@@ -128,7 +128,7 @@
             while (name1 == "")
             {
                 Console.WriteLine("Enter your name:");
-                name1 = Console.ReadLine();
+                name1 = Console.ReadLine()!;
             }
 
             //15.for loops
@@ -183,7 +183,7 @@
                 Console.WriteLine("play again?(y/n):");
                 try
                 {
-                    res = Console.ReadLine();
+                    res = Console.ReadLine()!;
                     res = res.ToUpper();
                     if (res == "Y")
                     {
@@ -263,6 +263,8 @@
             //33.overloaded constructors
             //34.inheritance
             //35.abstract classes
+            //36.array of objects
+
 
             Console.ReadKey();
 
