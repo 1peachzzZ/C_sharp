@@ -245,7 +245,10 @@
             string[,] parking = {{ "a", "b" },{ "c", "d" }};
             Console.WriteLine(parking[0,0]);
 
-            //29.
+            //29.classes
+            Class1.Hello1();
+            Messages.Hello();
+
             Console.ReadKey();
 
         }
@@ -269,6 +272,13 @@
                 total += arg;
             }
             return total;
+        }
+    }
+    static class Messages
+    {
+        public static void Hello()
+        {
+            Console.WriteLine("Hello!");
         }
     }
 }
