@@ -256,7 +256,10 @@
             human.Eat();
 
             //31.constructors
-            //32.
+            //32.static
+            Human.Sleep();
+            Console.WriteLine(Human.numberofhuman);
+            
 
             Console.ReadKey();
 
@@ -294,10 +297,12 @@
     {
         public string name;
         public int age;
+        public static int numberofhuman;
         public Human(string name, int age)
         {
             this.name = name;
             this.age = age;
+            numberofhuman++;
         }
         public void Eat() { Console.WriteLine(name); }
         public static void Sleep() { }
