@@ -241,7 +241,11 @@
             //27.string interpolation
             Console.WriteLine($"Hello {firstname} {lastname}.");
 
+            //28.multidimensional arrays
+            string[,] parking = {{ "a", "b" },{ "c", "d" }};
+            Console.WriteLine(parking[0,0]);
 
+            //29.
             Console.ReadKey();
 
         }
