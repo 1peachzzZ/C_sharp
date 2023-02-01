@@ -252,12 +252,11 @@
             Messages.Hello();
 
             //30.objects
-            Human human = new()
-            {
-                name= "Bro",
-                age = 21
-            };
+            Human human = new Human("Bro", 23);
             human.Eat();
+
+            //31.constructors
+            //32.
 
             Console.ReadKey();
 
@@ -293,8 +292,13 @@
     }
     class Human
     {
-        public string? name;
+        public string name;
         public int age;
+        public Human(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
         public void Eat() { Console.WriteLine(name); }
         public static void Sleep() { }
 
