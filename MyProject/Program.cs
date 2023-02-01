@@ -219,11 +219,13 @@
             Console.WriteLine(multiply(2, 3));
 
             //23.method overloading
-            Console.WriteLine(multiply(2, 3,4));
+            Console.WriteLine(multiply(2, 3, 4));
 
+            //24.params keyword
+            double total = checkout(1.2,2,3,4,5);
 
             Console.ReadKey();
-            
+
         }
         static void meathod(string args)
         {
@@ -233,9 +235,18 @@
         {
             return a * b;
         }
-        static double multiply(double a, double b,double c)
+        static double multiply(double a, double b, double c)
         {
             return a * b;
+        }
+        static double checkout(params double[] args)
+        {
+            double total = 0;
+            foreach (double arg in args)
+            {
+                total += arg;
+            }
+            return total;
         }
     }
 }
