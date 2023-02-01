@@ -252,7 +252,7 @@
             Messages.Hello();
 
             //30.objects
-            Human human = new Human("Bro", 23);
+            Human human = new("Bro", 23);
             human.Eat();
 
             //31.constructors
@@ -262,6 +262,7 @@
             
             //33.overloaded constructors
             //34.inheritance
+            //35.abstract classes
 
             Console.ReadKey();
 
@@ -314,12 +315,12 @@
     {
         public int speed;
 
-        public void go()
+        public static void Go()
         {
             Console.WriteLine("moving!");
         }
     }
-    class Car : Vehicle
+    abstract class Car : Vehicle
     {
         public int wheels = 4;
     }
