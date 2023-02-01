@@ -217,14 +217,23 @@
 
             //22.return keyword
             Console.WriteLine(multiply(2, 3));
-            Console.ReadKey();
 
+            //23.method overloading
+            Console.WriteLine(multiply(2, 3,4));
+
+
+            Console.ReadKey();
+            
         }
         static void meathod(string args)
         {
             Console.WriteLine(args);
         }
         static double multiply(double a, double b)
+        {
+            return a * b;
+        }
+        static double multiply(double a, double b,double c)
         {
             return a * b;
         }
