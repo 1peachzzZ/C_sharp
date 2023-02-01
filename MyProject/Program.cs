@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(args[0]);
             //1.output
             Console.Write("Hey");
             Console.Write("back\b");
@@ -232,6 +233,7 @@
 
             //24.params keyword
             double total = Checkout(1.2, 2, 3, 4, 5);
+            Console.WriteLine(total);
 
             //25.exception handing line:185
             //26.conditional operator
@@ -242,12 +244,20 @@
             Console.WriteLine($"Hello {firstname} {lastname}.");
 
             //28.multidimensional arrays
-            string[,] parking = {{ "a", "b" },{ "c", "d" }};
-            Console.WriteLine(parking[0,0]);
+            string[,] parking = { { "a", "b" }, { "c", "d" } };
+            Console.WriteLine(parking[0, 0]);
 
             //29.classes
             Class1.Hello1();
             Messages.Hello();
+
+            //30.objects
+            Human human = new()
+            {
+                name= "Bro",
+                age = 21
+            };
+            human.Eat();
 
             Console.ReadKey();
 
@@ -280,5 +290,13 @@
         {
             Console.WriteLine("Hello!");
         }
+    }
+    class Human
+    {
+        public string? name;
+        public int age;
+        public void Eat() { Console.WriteLine(name); }
+        public static void Sleep() { }
+
     }
 }
