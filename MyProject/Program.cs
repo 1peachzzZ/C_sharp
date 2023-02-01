@@ -180,17 +180,26 @@
                 Console.WriteLine("you win!");
                 Console.WriteLine("guesses: " + guesses);
                 Console.WriteLine("play again?(y/n):");
-                res = Console.ReadLine();
-                res = res.ToUpper();
+                try
+                {
+                    res = Console.ReadLine();
+                    res = res.ToUpper();
+                    if (res == "Y")
+                    {
+                        playagain = true;
+                    }
+                    else
+                    {
+                        playagain = false;
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("error!");
+                }
 
-                if (res == "Y")
-                {
-                    playagain = true;
-                }
-                else
-                {
-                    playagain = false;
-                }
+
+
             }
 
             //18.rock-paper-scissors game
@@ -212,34 +221,37 @@
             }
 
             //21.methods
-            meathod("ok");
+            Meathod("ok");
 
 
             //22.return keyword
-            Console.WriteLine(multiply(2, 3));
+            Console.WriteLine(Multiply(2, 3));
 
             //23.method overloading
-            Console.WriteLine(multiply(2, 3, 4));
+            Console.WriteLine(Multiply(2, 3, 4));
 
             //24.params keyword
-            double total = checkout(1.2,2,3,4,5);
+            double total = Checkout(1.2, 2, 3, 4, 5);
+
+            //25.exception handing
+
 
             Console.ReadKey();
 
         }
-        static void meathod(string args)
+        static void Meathod(string args)
         {
             Console.WriteLine(args);
         }
-        static double multiply(double a, double b)
+        static double Multiply(double a, double b)
         {
             return a * b;
         }
-        static double multiply(double a, double b, double c)
+        static double Multiply(double a, double b, double c)
         {
-            return a * b;
+            return a * b * c;
         }
-        static double checkout(params double[] args)
+        static double Checkout(params double[] args)
         {
             double total = 0;
             foreach (double arg in args)
