@@ -89,7 +89,7 @@
             Console.WriteLine(phoneNumber);
             Console.WriteLine(username);
             Console.WriteLine(phoneNumber.Length);
-            string firstname = fullName.Substring(0, 3);
+            string firstname = fullName[..3];
             string lastname = fullName.Substring(4, 3);
             Console.WriteLine(firstname);
             Console.WriteLine(lastname);
@@ -131,7 +131,7 @@
             }
 
             //15.for loops
-            for (int i = 0;i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine(i);
             }
@@ -142,11 +142,56 @@
             {
                 while (true)
                 {
-
+                    break;
                 }
             }
 
             //17.number guessing game
+            Random random1 = new();
+            bool playagain = true;
+            int min = 1;
+            int max = 100;
+            int guess;
+            int guesses;
+            int number;
+            string res;
+            while (playagain)
+            {
+                guess = 0;
+                guesses = 0;
+                number = random1.Next(min, max + 1);
+
+                while (guess != number)
+                {
+                    Console.WriteLine("Guess a number between " + min + "-" + max + ":");
+                    guess = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Guess: " + guess);
+                    if (guess > number)
+                    {
+                        Console.WriteLine(guess + " is to high!");
+                    }
+                    else if (guess < number)
+                    {
+                        Console.WriteLine(guess + " is to low!");
+                    }
+                    guesses++;
+                }
+                Console.WriteLine("number: " + number);
+                Console.WriteLine("you win!");
+                Console.WriteLine("guesses: " + guesses);
+                Console.WriteLine("play again?(y/n):");
+                res = Console.ReadLine();
+                res = res.ToUpper();
+
+                if (res == "Y")
+                {
+                    playagain = true;
+                }
+                else
+                {
+                    playagain = false;
+                }
+            }
 
             Console.ReadKey();
         }
