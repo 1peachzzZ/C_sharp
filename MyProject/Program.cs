@@ -205,7 +205,10 @@
                 Console.WriteLine(cars[i]);
             }
             //foreach loops
-
+            foreach (string car1 in cars)
+            {
+                Console.WriteLine(car1);
+            }
             Console.ReadKey();
         }
     }
