@@ -204,12 +204,29 @@
             {
                 Console.WriteLine(cars[i]);
             }
-            //foreach loops
+
+            //20.foreach loops
             foreach (string car1 in cars)
             {
                 Console.WriteLine(car1);
             }
+
+            //21.methods
+            meathod("ok");
+
+
+            //22.return keyword
+            Console.WriteLine(multiply(2, 3));
             Console.ReadKey();
+
+        }
+        static void meathod(string args)
+        {
+            Console.WriteLine(args);
+        }
+        static double multiply(double a, double b)
+        {
+            return a * b;
         }
     }
 }
