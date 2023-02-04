@@ -259,14 +259,19 @@
             //32.static
             Human.Sleep();
             Console.WriteLine(Human.numberofhuman);
-            
+
             //33.overloaded constructors
             //34.inheritance
             //35.abstract classes
             //36.array of objects
-
-
+            Car[] car2= new Car[3];
+            Console.WriteLine(car2[1].wheels);
             Console.ReadKey();
+
+            //37.objects as arguments
+            //38.method overridng
+            //39.Tostring method
+            //40.polymorphism
 
         }
         static void Meathod(string args)
